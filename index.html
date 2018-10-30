@@ -22,10 +22,20 @@
     Alter the CSS so that the map fills the entire page. Hint: try searching 
     online for "full screen leaflet map" or something to that effect.
     -->
-    <style>
-        #map { height:100%; }
-    </style>
-</head>
+  <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        html, body, #map {
+            height: 100%;
+            width: 100%;
+        }
+        #header {
+            height: 60px
+        }
+ </style>
+
 
 <!-- <BODY> The content that is rendered on the web page -->
 
@@ -40,7 +50,18 @@
         - Course information (course name, your name, etc.)
         - A link to https://leafletjs.com using the text: "I built this with Leaflet"
     -->
-
+    <!--The header for my web map-->
+   <div id="header" style="
+    background-color: aqua;
+"> 
+        <!-- The title for my map -->
+      
+     
+        <!-- The title for my map -->
+        <h2>My first leaflet map</h2>
+        <b2>Gis 4532 | Jake Enzminger| Fall 2018</b2>
+        <b3>https://leafletjs.com I built this with Leaflet</b3>
+         </div>
     <!-- the container for our map -->
     <div id="map"></div>
 
